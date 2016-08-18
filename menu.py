@@ -43,6 +43,7 @@ def menu(option):
 		delay(1)
 		exit()
 	elif option.upper() == "CREDITS":
+                print
 		print "This game was created by Jose Ignacio Rodriguez Labra"
 		print ""
 		print "This is his first game to experiment with the wonders of Python!"
@@ -53,6 +54,7 @@ def menu(option):
 		menu(option)
 	elif option.upper() == "EXIT":
 		def sure_to_exit():
+                        print
 			sure_exit = raw_input("Are you sure you want to exit the game? ")
 			if sure_exit.upper() == "YES":
 				exit()
