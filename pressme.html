@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Button!</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("div").mouseenter(function(){
+					$("div").css("height","+=5px");
+					$("div").css("width","+=5px");
+					$("div").css("background-color","#00cccc");
+					$("div").css("padding-top","+=4px");
+				});
+				$("div").mouseleave(function(){
+					$("div").css("height","-=5px");
+					$("div").css("width","-=5px");
+					$("div").css("background-color","green");
+					$("div").css("padding-top","-=4px");
+				});
+$('a').click(function(e) {
+	$("div").fadeOut("slow");
+    var anchor = $(this), h;
+    h = anchor.attr('href');
+    e.preventDefault();
+    anchor.animate({'opacity' : 0}, 700, function() {
+        window.location = h;
+    });
+});
+			});
+		</script>
+		<style>
+			div {
+			margin: auto;
+			margin-top: 50px;
+			height:50px;
+			width:120px;
+			background-color: green;
+			color: white;
+			border-radius:10px;
+			text-align: center;
+			padding-top: 13px;
+			border: 1px Solid black;
+}
+			a:hover{
+			text-decoration: none;
+}
+		</style>
+	</head>
+	<body>
+		<a href="http://media.tumblr.com/dd6b90b38715c2442a1ef27c469f08bd/tumblr_inline_n5gxc3r1mR1rrzg0n.gif">
+		<div>
+			<p><b>Press me!</b></p>
+		</div>
+		</a>
+	</body>
+</html>

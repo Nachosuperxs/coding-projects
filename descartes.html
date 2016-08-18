@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>A tribute page to Descartes</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+	.title {
+    color: #80bfff;
+    border: 3px solid black;
+    background-color: #595959;
+    font-family: Monospace;
+    padding-bottom: 10px;
+}
+
+.info-text {
+  text-align: left;
+  padding-left: 80px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  font-family: Monospace;
+}
+
+.info-text-div {
+ /* Waste code, but I don't want to delete it just in case  
+    border: 2px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-right: 80px;
+    width: 1000px;
+    display: incline-block; */
+    margin: auto;
+    width: 60%;
+    border: 2px solid black;
+    padding: 30px;
+    background-color: #bfbfbf;
+    
+}
+
+.image {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: grey;
+}
+
+a:hover { 
+  color: #80bfff;
+}
+
+footer {
+  background-color: #595959;
+}
+	</style> 
+ </head>
+  <body>
+	<script>
+		 $(document).ready(function() {
+			$(".info-text").removeClass(".text-center");
+		 });
+	</script>
+    <div class="text-center">
+      <div class="title">
+        <h1>Descartes</h1>
+         <h2>The father of modern philosophy</h2>
+      </div>
+      <div class="image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/800px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg" alt="Descartes Picture">
+      </div>
+      <br>
+      <div class="info-text-div info-text">
+        <h4>Facts about Descartes:</h4><br>
+          <ul>
+            <li>Descartes came up with the famous phrase "Cogito Ergo Sum" meaning "I am thinking, therefore, I am"</li><br>
+            <li>Descartes used his methodological doubt in order to doubt all that he knew in his <em>Meditations</em>.</li><br>
+            <li>The "Meditations on First Philosophy" became his most famous work, and it is still studied by philosophers.</li><br>
+            <li>Descartes created the graphing and plotting in coordinates system, hence the <em>Cartesian</em> plane.</li><br>
+            <li>As Descartes was called a rationalist, his philosophy opposed the various ideas proposed by empiricists.</li><br>
+            <li>He is often made fun of for proposing that the pineal gland was the organ that connected the body to the soul.</li><br>
+            <li>Descartes didn't think animals had souls and once notoriously dissected a dog alive.</li><br>
+          </ul>
+        <p>Despite all of the oddities in his life, his work changed philosophy and the entire world. This page was built as a tribute for him.</p>
+        <h3>Click <a href="https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes" target="_blank">here</a> to learn more about Descartes!</h3>
+      </div>
+      <br>
+    </div>
+  </body>
+</html>
